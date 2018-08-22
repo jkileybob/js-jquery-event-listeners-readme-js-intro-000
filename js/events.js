@@ -11,7 +11,13 @@ function frameIt() {
   })
 }
 
-
+function pressIt() {
+  $(document).on('keydown', function(key){
+    if (key.which == 71){
+      alert ("You have pressed the G spot");
+    }  
+  })
+}
 
 function submitIt (){
   $("form").on("submit", function (){
